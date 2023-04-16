@@ -1,12 +1,12 @@
 create table users (
-  user_id VARCHAR(30) not null
-  , name VARCHAR(30) not null
+  user_id VARCHAR(50) not null
+  , name VARCHAR(50) not null
   , primary key (user_id)
 ) ;
 
 create table images (
   image_id integer not null auto_increment
-  , user_id VARCHAR(30) not null
+  , user_id VARCHAR(50) not null
   , is_used boolean not null
   , primary key (image_id)
 ) ;
