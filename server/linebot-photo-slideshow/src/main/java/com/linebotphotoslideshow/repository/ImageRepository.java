@@ -1,5 +1,6 @@
 package com.linebotphotoslideshow.repository;
 
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Options;
 import org.apache.ibatis.annotations.Param;
@@ -13,7 +14,7 @@ import com.linebotphotoslideshow.domain.Image;
 @Mapper
 public interface ImageRepository {
 
-    @Select("""
+    @Insert("""
             INSERT INTO images(
               user_id
               , is_used
